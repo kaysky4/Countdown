@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label text="Countdown to: ">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="result" alignment="TOP_LEFT" layoutY="30.0" prefHeight="84.0" prefWidth="264.0">
+            	<font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textDaysUntil" cacheShape="false" layoutX="290.0" layoutY="23.0" prefHeight="74.0" prefWidth="150.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <TilePane alignment="CENTER" hgap="45.0" prefHeight="303.0" prefWidth="600.0" vgap="20.0">
+         <children>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="New Years" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/newyears.png" />
+                     </image></ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Valentine's Day" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/valentines.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Easter" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/easter.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="4th of July" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/july4th.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Halloween" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/halloween.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Thanksgiving" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/thanksgiving.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Christmas" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/christmas.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" onAction="#processHolidays" prefHeight="100.0" prefWidth="150.0" text="Birthday" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/birthday.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </TilePane>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>
